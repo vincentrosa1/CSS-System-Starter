@@ -1,0 +1,57 @@
+@layer reset, base, layout, components, utilities, overrides;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+}
+
+@layer base {
+  :root {
+    /* Add design tokens here. */
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+
+  img,
+  svg {
+    max-width: 100%;
+  }
+}
+
+@layer layout {
+  /* Add page-level layout and composition classes here. */
+}
+
+@layer components {
+  /* Add reusable components such as buttons, cards, callouts, and forms here. */
+}
+
+@layer utilities {
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+  }
+}
+
+@layer overrides {
+  /* Keep this layer small. Use it only for intentional exceptions. */
+}
+
+@media print {
+  /* Add print improvements here. */
+}
