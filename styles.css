@@ -48,6 +48,38 @@
     --color-focus: var(--blue-700);
   
   
+    /* TYPE */
+    --font-body: system-ui, "Segoe UI", ROboto, Helvetica, Arial, sans-serif;
+    --font-display: Georgia, "Times New Roman", serif;
+    --step--1: 0.875rem;
+    --step-0: 1rem;
+    --step-1: 1.25rem;
+    --step-2: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+    --step-3: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    --leading: 1.6;
+    --leading-tight: 1.15;
+
+    /* SPACING */
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem; 
+    --space-lg: 1.50rem;
+    --space-xl: 2.50rem;
+    --space-2xl: 4rem;
+    --measure: 65ch;
+    --container: 70rem;
+
+    /* SHAPE */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-pill: 999px;
+    --border-width: 1px;
+    --shadow-1: 0 1px 3px rgb(31 26 24 / 0.12);
+
+    /* FOCUS */
+    --focus-width: 3px;
+    --focus-offset: 3px;
   }
   
 
