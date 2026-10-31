@@ -145,9 +145,13 @@
 
   .hero {
     --color-focus: var(--white);
+    --color-action: var(--sand-200);
+    --color-action-strong: var(--sand-50);
+    --color-on-action: var(--ink-900);
+    --color-focus: var(--white);
     padding-block: var(--space-2xl);
     background: var(--color-accent);
-    color: var(--color-on-action);
+    color: var(--color-on---color-text);
   }
 
   .section {
@@ -176,7 +180,14 @@
 }
 
 @layer components {
-  /* Add reusable components such as buttons, cards, callouts, and forms here. */
+  /* EYEBROW */
+  .eyebrow {
+    font-size: var(--step--1);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-action);
+  }
 }
 
 @layer utilities {
