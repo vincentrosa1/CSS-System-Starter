@@ -346,5 +346,27 @@
 }
 
 @media print {
-  /* Add print improvements here. */
+  .site-header nav, .button, #register {
+    display: none;
+  }
+
+  body, .hero, .card, .callout {
+    background: none;
+    color: #000;
+    box-shadow: none;
+  }
+
+  .eyebrow {
+    color: #000;
+  }
+
+  .hero {
+    padding-block: var(--space-md);
+  }
+
+  .card, .callout {
+    border: 1px solid #000;
+    break-inside: avoid;
+  }
+
 }
