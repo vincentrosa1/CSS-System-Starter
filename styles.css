@@ -24,8 +24,32 @@
 
 @layer base {
   :root {
-    /* Add design tokens here. */
+    /* Palette */
+    --sand-50: #fbf7f0;
+    --sand-200: #ecdfc8;
+    --clay-600: #a4471f;
+    --clay-700: #7f3515;
+    --cactus-700: #2f5d50;
+    --ink-900: #1f1a17;
+    --ink-600: #5b524b;
+    --white: #ffffff;
+    --blue-700: #1d4ed8;
+  
+    /* roles */
+    --color-bg: var(--sand-50);
+    --color-surface: var(--white);
+    --color-text: var(--ink-900);
+    --color-muted: var(--ink-600);
+    --color-border: var(--sand-200);
+    --color-action: var(--clay-600);
+    --color-action-strong: var(--clay-700);
+    --color-on-action: var(--white);
+    --color-accent: var(--cactus-700);
+    --color-focus: var(--blue-700);
+  
+  
   }
+  
 
   body {
     font-family: Arial, Helvetica, sans-serif;
