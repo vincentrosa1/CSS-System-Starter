@@ -342,7 +342,11 @@
 }
 
 @layer overrides {
-  /* Keep this layer small. Use it only for intentional exceptions. */
+  @media (prefers-reduced-motion: reduce) {
+    .button:active {
+      transform: none;
+    }
+  }
 }
 
 @media print {
