@@ -128,7 +128,51 @@
 }
 
 @layer layout {
-  /* Add page-level layout and composition classes here. */
+  .site-header, .hero, .section, .site-footer {
+    padding-inline: max(var(--space-md), (100% - var(--container)) / 2);
+  }
+
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-block: var(--space-md);
+    border-block-end: var(--border-width) solid var(--color-surface);
+    background: var(--color-surface);
+  }
+
+  .hero {
+    --color-focus: var(--white);
+    padding-block: var(--space-2xl);
+    background: var(--color-accent);
+    color: var(--color-on-action);
+  }
+
+  .section {
+    display: grid;
+    gap: var(--space-lg);
+    padding-block: var(--space-xl);
+  }
+
+  .section-heading {
+    display: grid;
+    gap: var(--space-2xs);
+  }
+
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: var(--space-lg);
+  }
+
+  .site-footer {
+    padding-block: var(--space-lg);
+    border-block-start: var(--border-width) solid var(--color-border);
+    color: var(--color-muted);
+  }
 }
 
 @layer components {
