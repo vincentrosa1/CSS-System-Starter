@@ -190,6 +190,30 @@
   }
 }
 
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--color-action);
+  color: var(--color-on-action);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buton:hover {
+  background: var(--color-action-strong);
+  color: var(--color-on-action);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+
 @layer utilities {
   .visually-hidden {
     position: absolute;
