@@ -238,7 +238,42 @@
     background: var(--color-surface);
   }
 
-}
+
+  /* FORM */
+  .interest-form {
+    display: grid;
+    gap: var(--space-xs);
+    max-width: 30rem;
+  }
+
+  .interest-form label {
+    font-weight: 700;
+  }
+  
+  interest-form label:not(:forst-of-type) {
+    margin-block-start: var(--space-sm);
+  }
+
+  .interest-form input, 
+  .interest-form select {
+    padding: var(--space-xs) var(--space-sm);
+    border: var(--border-width) solid var(--color-muted);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+
+
+  .interest-form input:focus-visible, 
+  .interest-form select:focus-visible {
+    border-color: var(--color-focus);
+  }
+
+  .interest-form .button {
+    justify-self: start;
+    margin-block-start: var(--space-sm);
+  }
+
+} 
 
 @layer utilities {
   .visually-hidden {
