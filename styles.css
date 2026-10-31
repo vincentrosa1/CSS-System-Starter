@@ -323,6 +323,22 @@
     white-space: nowrap;
     clip-path: inset(50%);
   }
+
+  /* Evening the space between stacked children. */
+  .flow > * + * {
+    margin-block-start: var(--flow-space, var(--space-md));
+  }
+
+  /* Cap line length */
+  .measure {
+    max-width: var(--measure);
+  }
+
+  /* Center short text */
+  .text-center {
+    text-align: center;
+  }
+
 }
 
 @layer overrides {
